@@ -27,6 +27,8 @@ VAEs compress input data into a latent space and then reconstruct it, allowing t
 ### c. Transformer Models:
 Transformers are the backbone of modern generative systems, especially LLMs. Introduced in the seminal paper "Attention Is All You Need", the transformer architecture relies on self-attention mechanisms, allowing the model to understand the context and relationship between different parts of input sequences.
 These architectures, particularly transformers, have enabled the rise of powerful models such as GPT, BERT, and T5, driving major advancements in natural language generation and beyond.
+![image](https://github.com/user-attachments/assets/4d010952-1a64-4904-9d08-cfcbeaa1937e)
+
 
 ## 3. Applications of Generative AI
 Generative AI finds applications across a wide variety of domains, revolutionizing creative, technical, and analytical processes:
