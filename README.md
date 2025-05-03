@@ -30,24 +30,28 @@ VAEs compress input data into a latent space and then reconstruct it, allowing t
 Transformers are the backbone of modern generative systems, especially LLMs. Introduced in the seminal paper "Attention Is All You Need", the transformer architecture relies on self-attention mechanisms, allowing the model to understand the context and relationship between different parts of input sequences.
 These architectures, particularly transformers, have enabled the rise of powerful models such as GPT, BERT, and T5, driving major advancements in natural language generation and beyond.
 ### d. Architectures for Large Language Models (LLMs):
-LLMs are built on advanced transformer architectures, with various modifications and enhancements. Key architectural patterns include:
 
-Decoder-Only Transformers (e.g., GPT series):
-These models generate text by predicting the next token in a sequence, trained in a left-to-right manner. GPT-3 and GPT-4 are prominent examples. They excel at text generation and completion tasks.
+![image](https://github.com/user-attachments/assets/fe969348-5c1c-47d2-a29d-b87970dca23f)
 
-Encoder-Only Transformers (e.g., BERT):
-Primarily used for understanding tasks, BERT processes input bidirectionally, capturing context from both left and right. It’s well-suited for classification, question answering, and embedding generation.
+Input Embeddings: Tokens are converted into vector representations capturing meaning.
 
-Encoder-Decoder Transformers (e.g., T5, BART):
-These models use an encoder to process the input and a decoder to generate output, making them powerful for translation, summarization, and complex sequence-to-sequence tasks.
+Positional Encoding: Adds sequence information to embeddings.
 
-Sparse and Mixture-of-Experts Models (e.g., GShard, Switch Transformer):
-To scale efficiently, some LLMs activate only parts of the model for specific inputs. This increases capacity without proportionally increasing compute costs.
+Encoder Layers: Stacked layers with self-attention and feed-forward components.
 
-Multimodal Transformers (e.g., GPT-4, Gemini):
-These models are capable of processing multiple data types (text, images, audio) simultaneously, enabling rich interaction across formats.
+Self-Attention: Models relationships between tokens using attention scores.
 
-These specialized architectures enable LLMs to scale up to hundreds of billions or even trillions of parameters, unlocking advanced reasoning, creativity, and multitask abilities.
+Feed-Forward Network: Applies transformations to each token individually.
+
+Decoder Layers: Generates output using masked attention and encoder outputs.
+
+Multi-Head Attention: Parallel attention heads capture diverse token relationships.
+
+Layer Normalization: Stabilizes and improves model performance.
+
+Output Layers: Linear + SoftMax layers produce token probabilities.
+
+Model Variants: GPT, BERT, T5 add customizations for different tasks.
 
 ![image](https://github.com/user-attachments/assets/4d010952-1a64-4904-9d08-cfcbeaa1937e)
 
