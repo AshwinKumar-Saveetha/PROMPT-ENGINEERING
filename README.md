@@ -29,6 +29,26 @@ VAEs compress input data into a latent space and then reconstruct it, allowing t
 ### c. Transformer Models:
 Transformers are the backbone of modern generative systems, especially LLMs. Introduced in the seminal paper "Attention Is All You Need", the transformer architecture relies on self-attention mechanisms, allowing the model to understand the context and relationship between different parts of input sequences.
 These architectures, particularly transformers, have enabled the rise of powerful models such as GPT, BERT, and T5, driving major advancements in natural language generation and beyond.
+### d. Architectures for Large Language Models (LLMs):
+LLMs are built on advanced transformer architectures, with various modifications and enhancements. Key architectural patterns include:
+
+Decoder-Only Transformers (e.g., GPT series):
+These models generate text by predicting the next token in a sequence, trained in a left-to-right manner. GPT-3 and GPT-4 are prominent examples. They excel at text generation and completion tasks.
+
+Encoder-Only Transformers (e.g., BERT):
+Primarily used for understanding tasks, BERT processes input bidirectionally, capturing context from both left and right. It’s well-suited for classification, question answering, and embedding generation.
+
+Encoder-Decoder Transformers (e.g., T5, BART):
+These models use an encoder to process the input and a decoder to generate output, making them powerful for translation, summarization, and complex sequence-to-sequence tasks.
+
+Sparse and Mixture-of-Experts Models (e.g., GShard, Switch Transformer):
+To scale efficiently, some LLMs activate only parts of the model for specific inputs. This increases capacity without proportionally increasing compute costs.
+
+Multimodal Transformers (e.g., GPT-4, Gemini):
+These models are capable of processing multiple data types (text, images, audio) simultaneously, enabling rich interaction across formats.
+
+These specialized architectures enable LLMs to scale up to hundreds of billions or even trillions of parameters, unlocking advanced reasoning, creativity, and multitask abilities.
+
 ![image](https://github.com/user-attachments/assets/4d010952-1a64-4904-9d08-cfcbeaa1937e)
 
 
